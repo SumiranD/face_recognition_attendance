@@ -19,7 +19,7 @@ class Face_Detection_System:
         
         #top bar
         img=Image.open(r"college-images\labeltop.jpg")
-        img=img.resize((1370,100),Image.ANTIALIAS)
+        img=img.resize((1370,100),Image.Resampling.LANCZOS)
         self.photoimg=ImageTk.PhotoImage(img)
         
         f_lbl=Label(self.root,image=self.photoimg)
@@ -28,7 +28,7 @@ class Face_Detection_System:
         
         #background image
         img3=Image.open(r"college-images\background.jpg")
-        img3=img3.resize((1370,568),Image.ANTIALIAS)
+        img3=img3.resize((1370,568),Image.Resampling.LANCZOS)
         self.photoimg3=ImageTk.PhotoImage(img3)
         
         bg_img=Label(self.root,image=self.photoimg3)
@@ -40,7 +40,7 @@ class Face_Detection_System:
         
         #student details button
         img4=Image.open(r"college-images\student.jpg")
-        img4=img4.resize((200,200),Image.ANTIALIAS)
+        img4=img4.resize((200,200),Image.Resampling.LANCZOS)
         self.photoimg4=ImageTk.PhotoImage(img4)
         
         b1=Button(bg_img,image=self.photoimg4,command=self.student_details,cursor="hand2")
@@ -52,7 +52,7 @@ class Face_Detection_System:
         
          #face Detecton button
         img5=Image.open(r"college-images\face_detection.jpg")
-        img5=img5.resize((200,200),Image.ANTIALIAS)
+        img5=img5.resize((200,200),Image.Resampling.LANCZOS)
         self.photoimg5=ImageTk.PhotoImage(img5)
         
         b1=Button(bg_img,command=self.face_detector,image=self.photoimg5,cursor="hand2")
@@ -64,7 +64,7 @@ class Face_Detection_System:
         
          #attendance button
         img6=Image.open(r"college-images\attendance.jpg")
-        img6=img6.resize((200,200),Image.ANTIALIAS)
+        img6=img6.resize((200,200),Image.Resampling.LANCZOS)
         self.photoimg6=ImageTk.PhotoImage(img6)
         
         b1=Button(bg_img,command=self.Attend,image=self.photoimg6,cursor="hand2")
@@ -76,7 +76,7 @@ class Face_Detection_System:
         
          #help desk button 
         img7=Image.open(r"college-images\help_desk.jpg")
-        img7=img7.resize((200,200),Image.ANTIALIAS)
+        img7=img7.resize((200,200),Image.Resampling.LANCZOS)
         self.photoimg7=ImageTk.PhotoImage(img7)
         
         b1=Button(bg_img,command=self.help_desk,image=self.photoimg7,cursor="hand2")
@@ -89,7 +89,7 @@ class Face_Detection_System:
         ##second row buttons
         #train data button
         img8=Image.open(r"college-images\traindata.jpg")
-        img8=img8.resize((200,200),Image.ANTIALIAS)
+        img8=img8.resize((200,200),Image.Resampling.LANCZOS)
         self.photoimg8=ImageTk.PhotoImage(img8)
         
         b1=Button(bg_img,command=self.training,image=self.photoimg8,cursor="hand2")
@@ -101,7 +101,7 @@ class Face_Detection_System:
         
          #photos Detecton button
         img9=Image.open(r"college-images\photos.jpg")
-        img9=img9.resize((200,200),Image.ANTIALIAS)
+        img9=img9.resize((200,200),Image.Resampling.LANCZOS)
         self.photoimg9=ImageTk.PhotoImage(img9)
         
         b1=Button(bg_img,image=self.photoimg9,command=self.open_img,cursor="hand2")
@@ -113,7 +113,7 @@ class Face_Detection_System:
         
          #developer button
         img10=Image.open(r"college-images\developer.jpg")
-        img10=img10.resize((200,200),Image.ANTIALIAS)
+        img10=img10.resize((200,200),Image.Resampling.LANCZOS)
         self.photoimg10=ImageTk.PhotoImage(img10)
         
         b1=Button(bg_img,command=self.developers,image=self.photoimg10,cursor="hand2")
@@ -125,7 +125,7 @@ class Face_Detection_System:
         
          #exit button 
         img11=Image.open(r"college-images\exit.jpg")
-        img11=img11.resize((200,200),Image.ANTIALIAS)
+        img11=img11.resize((200,200),Image.Resampling.LANCZOS)
         self.photoimg11=ImageTk.PhotoImage(img11)
         
         b1=Button(bg_img,image=self.photoimg11,command=self.close_window,cursor="hand2")
@@ -139,7 +139,7 @@ class Face_Detection_System:
         
         #bottom bar
         img2=Image.open(r"college-images\labeltop.jpg")
-        img2=img2.resize((1370,100),Image.ANTIALIAS)
+        img2=img2.resize((1370,100),Image.Resampling.LANCZOS)
         self.photoimg2=ImageTk.PhotoImage(img2)
         
         f_lbl=Label(self.root,image=self.photoimg2)
